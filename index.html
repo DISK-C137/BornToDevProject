@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>โปรแกรมคำนวณดัชนีมวลกาย</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="text-center">โปรแกรมคำนวณดัชนีมวลกาย</h1>
+            <div class="form-group">
+              <label for="weight">น้ำหนัก (กิโลกรัม)</label>
+              <input type="number" class="form-control" id="weight" placeholder="กรอกน้ำหนักของคุณ">
+            </div>
+            <div class="form-group">
+              <label for="height">ส่วนสูง (เซนติเมตร)</label>
+              <input type="number" class="form-control" id="height" placeholder="กรอกส่วนสูงของคุณ">
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" onclick="getValue()">คำนวณ</button>
+              <button type="button" class="btn btn-secondary" onclick="clearValues()">ล้าง</button>
+            </div>
+            <h2 id="BIM" class="text-center mt-4"></h2>
+            <h2 id="result" class="text-center"></h2>
+            <p id="details" class="text-center"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Fucntions.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
